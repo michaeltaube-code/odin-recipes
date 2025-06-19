@@ -13,16 +13,30 @@ body {
     box-shadow:  0.3em 0.3em 1em rgba(171, 171, 171, 0.6);
    }
 
-.heading, .para {
+h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }   
  
-.recipe-list {
-    display: inline-block;
-    text-align: center;
-}
 
 .recipe-img {
 
 }
+
+/*Navigation Menu*/
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+#navigation button {
+   margin: auto;
+}
+
+#navigation a {
+    text-decoration: none;
+}
+
+
 
