@@ -18,21 +18,40 @@ h1, h2, h3, h4, h5, h6, p {
 
 #navigation {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+
+  flex-wrap: wrap;
   gap: 1rem;
   
   padding: 0;
   margin: 0;
   list-style: none;
   justify-content: center;
+
   }
+
+/*Making the Navigation responsive*/
+
+/*
+This changes the behaviour for the flex-container #navigation.
+When the screen-size is minimum 750px the flex items in #navigation
+will be oriented as a row. Otherwise they are oriented as a column
+as defined with flex-direction declaration.
+*/
+
+@media (min-width: 750px) {
+    #navigation {
+        flex-direction: row;
+    }
+}
+
 
 #navigation a {
     text-decoration: none;
 }
 */
 
-/*Recipe Page*/
+/*Recipe Pages*/
 
 .recipe-img {
     display: block;
